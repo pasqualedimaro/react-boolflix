@@ -14,7 +14,8 @@
     "bootstrap-icons": "^1.13.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-flags-select": "^2.5.0"
+    "react-flags-select": "^2.5.0",
+    "react-world-flags": "^1.6.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",

@@ -7,3 +7,9 @@
 img{
   width: 50px
 }
+
+.flag{
+  width: 30px;
+  height: 20px;
+  object-fit: cover;
+}
