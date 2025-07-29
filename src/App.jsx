@@ -3,7 +3,7 @@ import GlobalContext, {GlobalProvider} from "./components/GlobalContext";
 import SearchBar from './components/SearchBar'
 
 const AppContent = () => {
-  const {movie, setMovie} = useState([]);
+  const [movie, setMovie] = useState([]);
 
   return (
     <>
