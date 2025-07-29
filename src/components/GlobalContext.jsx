@@ -23,3 +23,5 @@ return (
     </GlobalContext.Provider>
  )
 }
+
+export default GlobalContext;
