@@ -9,31 +9,34 @@
 
   return (
     <>
-      <div className='container'>
-        <h2>Risultati Ricerca</h2>
+    <div className='container'>
+      <div className="row">
+        <h2 className="mb-4">Risultati Ricerca</h2>
         {movies.length > 0 ? (
           movies.filter(movie => movie.media_type !== "person").map((movie) => (
-            <div className = "col" key={movie.id}>
-              <ul>
-                <div>
-                  <img src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`} alt="" />
-                  <li className='border border-danger'>
+            <div className = "col-4 mb-4" key={movie.id}>
+                <div className="card p-3 text-light" style={{backgroundImage:`url(https://image.tmdb.org/t/p/w300${movie.poster_path}`}}>
+                  <div className='details'>
                     <p className='m-2'>{movie.title || movie.name}</p>
                     <p className='m-2'>{movie.original_title || movie.original_name}</p>
+                    <div className= 'p-2'>
                     <Flag 
                         code={FlagForLanguage(movie.original_language)}
                         className="flag"
                         />
+                      </div>
+                      <div className= 'p-2'>
                     <VoteInStars movieId={movie.id} />
-                  </li>
+                    </div>
+                  </div>
                 </div>
-              </ul>
             </div>
           ))
         ) : (
           <p>Nessun Risultato</p>
         )}
       </div>
+    </div>
     </>
   )
 }
