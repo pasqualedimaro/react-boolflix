@@ -1,26 +1,63 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.flag{
+.flag {
   width: 30px;
   height: 20px;
   object-fit: cover;
+  margin: 0.5rem;
 }
 
-header{
+header {
   position: sticky;
   top: 0;
-  margin-bottom: 2rem;
   z-index: 1;
 }
 
-.card{
-  min-height: 440px;
+main {
+  padding-top: 2rem;
+}
 
-  .details{
-    display: none;
-  }
+.card {
+  min-height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.details {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  text-align: center;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+}
+
+.card:hover .details {
+  display: block;
 }
