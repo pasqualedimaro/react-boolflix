@@ -10,7 +10,7 @@ export default function SearchBar() {
                         <input type="search"
                         className="p-2 border-danger rounded"
                         name="searchForm"
-                        placehoder="Inserisci FIlm"
+                        placeholder="Inserisci FIlm o Serie TV"
                         value={searchMovies}
                         onChange={e=> setSearchMovies(e.target.value)} />
                     </div>
