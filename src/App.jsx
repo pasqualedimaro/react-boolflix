@@ -1,6 +1,6 @@
 import {GlobalContextProvider, useGlobalContext } from './contexts/GlobalContext'
-import SearchBar from './components/SearchBar'
 import ListOfResults from './components/ListOfResults'
+import AppHeader from './components/AppHeader'
 
 function App(){
 
@@ -8,7 +8,7 @@ function App(){
 return (
   <>
   <GlobalContextProvider>
-    <SearchBar />
+    <AppHeader />
     <main>
       <ListOfResults />
     </main>
